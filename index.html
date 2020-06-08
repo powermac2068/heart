@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEART</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-color: #000;
+        }
+
+        div {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            left: calc(50% - 250px);
+            top: calc(50vh - 250px);
+            background-image: url(heart.jpg);
+            animation: walk .3s infinite steps(8);
+        }
+
+        @keyframes walk {
+            100% {
+                background-position: -4000px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
